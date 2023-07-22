@@ -1,0 +1,40 @@
+.cards {
+  // display: flex;
+  padding-top: 10px;
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__aside {
+    min-width: 200px;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 8px 0 0;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 150px;
+    margin-top: 105px;
+    padding-right: 18px;
+  }
+
+  &__text {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #444444;
+    font-weight: 700;
+
+    margin-top: 4px;
+  }
+}

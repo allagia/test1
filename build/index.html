@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Тестовая страница</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class=" header__wrapper container">
+      <a class="header__logo" href="#" aria-label="logo">
+          <img src="img/logo@1x.png" srcset="img/logo@2x.png 2x" alt="логотип компании">
+        </a>
+
+      <div class="header__contacts">
+        <a href="tel:+74997777777" class="header__phone">+7(499) 777-77-77</a>
+        <a href="tel:+74997777777" class="header__phone">+7(499) 777-77-77</a>
+        <a href="#" class="header__feedback">Обратная связь</a>
+      </div>
+
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list container">
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Главная</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Каталог</a></li>
+        <li class="header__nav-item"><a class="header__nav-link active" href="#">Доставка и оплата</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Прайс-лист</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <main class="main">
+
+    <section class="intro">
+      <h1 class="visually-hidden">Название компании</h1>
+      <picture class="intro__picture">
+        <source type="image/webp" srcset="img/slide1@1x.webp 1x, img/slide1@2x.webp 2x">
+        <img class="intro__image" src="img/slide1@1x.png" srcset="img/slide1@2x.png 2x" alt="изображение первой страницы">
+      </picture>
+    </section>
+
+    <div class="breadcrumb container">
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Главная</a></li>
+        <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Каталог</a></li>
+        <li class="breadcrumb__item"><a class="breadcrumb__link active">Бытовая техника</a></li>
+      </ul>
+    </div>
+
+
+    <section class="cards container">
+
+      <div class="cards__wrapper">
+
+        <aside class="cards__aside left-menu">
+          <ul class="left-menu__list">
+            <li class="left-menu__item"><a class="left-menu__link">Автомобили</a></li>
+            <li class="left-menu__item subitem">
+              <h3>Бытовая техника</h3>
+              <ul class="subitem__list" type="disc">
+                <li class="subitem__item"><a class="subitem__link active" href="#">Микроволновки</a></li>
+                <li class="subitem__item"><a class="subitem__link" href="#">Холодильники</a></li>
+                <li class="subitem__item"><a class="subitem__link" href="#">Посудомоечные машины</a></li>
+                <li class="subitem__item"><a class="subitem__link" href="#">Чайники</a></li>
+              </ul>
+            </li>
+            <li class="left-menu__item"><a class="left-menu__link" href="#">Мобильная техника</a></li>
+            <li class="left-menu__item"><a class="left-menu__link" href="#">Компьютеры</a></li>
+            <li class="left-menu__item"><a class="left-menu__link" href="#">Одежда</a></li>
+            <li class="left-menu__item"><a class="left-menu__link" href="#">Недвижимость</a></li>
+          </ul>
+
+          <a class="cards__price" href="#">
+            <picture>
+              <source type="image/webp" srcset="img/MS_EXCEL@1x.webp 1x, img/MS_EXCEL@2x.webp 2x">
+              <img src="img/MS_EXCEL@1x.png" srcset="img/MS_EXCEL@2x.png 2x" alt="таблица Excel">
+            </picture>
+            <span class="cards__text">Прайс-лист</span>
+          </a>
+
+        </aside>
+
+        <ul class="cards__list">
+          <li class="cards__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="img/nophoto.jpg" srcset="img/nophoto@2x.jpg" alt="изображение товара">
+              <p class="card__description">Самый клевый чайник, который надо купить!</p>
+            </a>
+            <div class="card__bottom">
+              <span class="card__price" an="">1 900 р.</span>
+              <button class="card__basket" type="button" aria-label="добавить в корзину"></button>
+            </div>
+          </li>
+          <li class="cards__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="img/nophoto.jpg" srcset="img/nophoto@2x.jpg" alt="изображение товара">
+              <p class="card__description">Самый клевый чайник, который надо купить!</p>
+            </a>
+            <div class="card__bottom">
+              <span class="card__price" an="">1 900 р.</span>
+              <button class="card__basket" type="button" aria-label="добавить в корзину"></button>
+            </div>
+          </li>
+          <li class="cards__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="img/nophoto.jpg" srcset="img/nophoto@2x.jpg" alt="изображение товара">
+              <p class="card__description">Самый клевый чайник, который надо купить!</p>
+            </a>
+            <div class="card__bottom">
+              <span class="card__price" an="">1 900 р.</span>
+              <button class="card__basket" type="button" aria-label="добавить в корзину"></button>
+            </div>
+          </li>
+          <li class="cards__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="img/nophoto.jpg" srcset="img/nophoto@2x.jpg" alt="изображение товара">
+              <p class="card__description">Самый клевый чайник, который надо купить!</p>
+            </a>
+            <div class="card__bottom">
+              <span class="card__price" an="">1 900 р.</span>
+              <button class="card__basket" type="button" aria-label="добавить в корзину"></button>
+            </div>
+          </li>
+          <li class="cards__item card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="img/nophoto.jpg" srcset="img/nophoto@2x.jpg" alt="изображение товара">
+              <p class="card__description">Самый клевый чайник, который надо купить!</p>
+            </a>
+            <div class="card__bottom">
+              <span class="card__price" an="">1 900 р.</span>
+              <button class="card__basket" type="button" aria-label="добавить в корзину"></button>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pagination">
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="container">
+      <h2 class="visually-hidden">Описание</h2>
+      <p class="">В частности, новая модель организационной деятельности предполагает независимые способы реализации как самодостаточных, так и внешне зависимых концептуальных решений. А ещё предприниматели в сети интернет ограничены исключительно образом мышления. С другой стороны, сплочённость команды профессионалов требует анализа стандартных подходов.</p>
+      <p class="">В целом, конечно, постоянное информационно-пропагандистское обеспечение нашей деятельности требует анализа укрепления моральных ценностей! Кстати, акционеры крупнейших компаний призваны к ответу. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: синтетическое тестирование, в своём классическом представлении, допускает внедрение приоретизации разума над эмоциями. Таким образом, начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки системы массового участия.</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <div>
+      <p>© 2012–2023 ЗАО «Компания»</p>
+      <a href="mailto:info@name.ru">info@name.ru</a>
+    </div>
+
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item"><a class="footer__link" href="">Главная</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Каталог</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Доставка и оплата</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Прайс-лист</a></li>
+        <li class="footer__item"><a class="footer__link" href="">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="#">Разработка сайта —  компания «...»</a>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

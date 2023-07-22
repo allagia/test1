@@ -1,0 +1,55 @@
+.subitem {
+  &__list {
+    @include list-reset;
+    padding-left: 19px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -10px;
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: #767676;
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #767676;
+
+    transition: $transition-props;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  &__link.active {
+    color: #000000;
+    text-decoration: underline;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  h3 {
+    text-decoration: underline;
+    font-size: inherit;
+    font-weight: 400;
+    margin: 8px 0 4px;
+    color: #767676;
+
+    cursor: default;
+  }
+}
