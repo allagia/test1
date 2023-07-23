@@ -1,2 +1,95 @@
-.footer {}
+.footer {
+  padding: 42px 0 48px;
+
+  color: #ffffff;
+  background-color: #777777;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column-left {
+    font-size: 13px;
+    line-height: 22px;
+
+    padding-top: 2px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 1;
+      order: 2;
+
+      margin: 0 30px 30px 0;
+    }
+  }
+
+  &__column-right {
+    font-size: 13px;
+    line-height: 22px;
+
+    min-width: 180px;
+    padding-top: 2px;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 1;
+      order: 3;
+    }
+  }
+
+  &__company-name {
+    margin: 0;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__link {
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    text-decoration: underline;
+    color: #ffffff;
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 30px;
+    }
+  }
+
+  &__nav {
+    min-width: 289px;
+
+    @include tablet {
+      min-width: 200px;
+    }
+
+    @include mobile {
+      width: 100%;
+      order: 1;
+
+      margin-bottom: 30px;
+    }
+  }
+
+  &__developer {
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__mail, &__link, &__developer {
+    transition: $transition-props;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
 

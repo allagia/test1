@@ -5,7 +5,15 @@
 
   background-color: #F8F8F8;
 
+  @include mobile {
+    margin-top: 0;
+  }
+
   &__image {
     margin-left: 10px;
+
+    @include desktop {
+      margin-left: 0;
+    }
   }
 }

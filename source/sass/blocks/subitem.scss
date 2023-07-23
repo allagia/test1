@@ -31,6 +31,11 @@
     &:hover {
       opacity: 0.6;
     }
+
+    @include mobile {
+      font-size: 16px;
+      line-height: 28px;
+    }
   }
 
   &__link.active {
@@ -51,5 +56,10 @@
     color: #767676;
 
     cursor: default;
+
+    @include mobile {
+      font-size: 20px;
+      line-height: 32px;
+    }
   }
 }

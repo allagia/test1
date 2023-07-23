@@ -1,16 +1,38 @@
 .card {
 
   width:calc( ( 100% - 30px ) / 3 );
-  padding: 20px;
+  padding: 19px;
   margin-bottom: 20px;
   margin-right: 15px;
 
   background-color: #C3E0FF;
 
-
   &:nth-child(3n) {
     margin-right: 0;
+
+    @include tablet {
+      margin-right: 15px;
+    }
+
+    @include mobile {
+      margin-right: 0;
+    }
   }
+
+
+  @include tablet {
+    width:calc( ( 100% - 30px ) / 2 );
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-right: 0;
+  }
+
 
   &__link {
     display: flex;
@@ -24,8 +46,8 @@
   }
 
   &__image {
-    width: 210px;
-    height: 209px;
+    width: 100%;
+    height: auto;
   }
 
   &__description {
@@ -36,6 +58,11 @@
     font-weight: 400;
 
     margin: 19px 0 57px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
   }
 
   &__price {
@@ -44,6 +71,11 @@
     line-height: 18px;
     color: #444444;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 19px;
+    }
+
   }
 
   &__bottom {
@@ -54,8 +86,8 @@
 
   &__basket {
     @include button-reset;
-    min-width: 28px;
-    min-height: 21px;
+    width: 28px;
+    height: 21px;
     margin-right: 16px;
 
     background-image: url(../img/addtobasket_mini.svg);

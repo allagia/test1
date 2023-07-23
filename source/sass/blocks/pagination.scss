@@ -1,0 +1,52 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0 62px 6px;
+  border-bottom: 1px solid #777777;
+
+  @include mobile {
+    padding: 8px 0 30px 6px;
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      margin-right: 18px;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    letter-spacing: 8px;
+    line-height: 22px;
+    color: #767676;
+    font-weight: 400;
+    transition: $transition-props;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &.active {
+      font-size: 18px;
+      color:#444444;
+      cursor: default;
+
+      &:hover {
+        opacity: 1;
+      }
+
+    }
+  }
+
+}

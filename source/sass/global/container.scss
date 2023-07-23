@@ -1,6 +1,18 @@
 .container {
   width: 100%;
-  max-width: 1820px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 210px;
+
+  @include desktop {
+    padding: 0 100px;
+  }
+
+  @include tablet {
+    padding: 0 50px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
 }

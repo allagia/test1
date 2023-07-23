@@ -1,0 +1,42 @@
+.description {
+  display: flex;
+
+  margin-bottom: 130px;
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+
+  &__column {
+    width: calc((100% - 20px)/2);
+    margin: 24px auto;
+
+    font-size: 13px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #767676;
+
+    hyphens: auto;
+
+    &--left-column {
+      margin-right: 40px;
+
+      @include mobile {
+        margin-right: 0;
+      }
+    }
+
+    &--right-column {
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+
+    @include mobile {
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+}
